@@ -1,0 +1,67 @@
+@import url('https://rsms.me/inter/inter.css');
+
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+:root {
+    --bg-page: #1a1a1a;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter var", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    user-select: none;
+    transition: all 200ms ease;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+html,
+body,
+.full-width {
+    height: 100%;
+}
+
+.App {
+    transition: 0.3s;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    padding: 20px 10px 20px 10px
+}
+
+body {
+
+    &,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:var(--bg-page);
+    color:var(--text-color);
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+    height: 0;
+}
+
